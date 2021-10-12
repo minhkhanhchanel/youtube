@@ -394,7 +394,7 @@
 
 .suggest__items-list {
     font-size: 1.4rem;
-    min-width: 75px;
+    min-width: 85px;
     color: var(--text-color);
     padding: 7px 12px;
     border: 1px solid var(--border-color);
