@@ -1,0 +1,29 @@
+:root{
+    --white-color: #fff;
+    --text-white-color: #dddddd;
+    --hover-color: #f2f2f2;
+    --black-color: #000;
+    --text-black-color: #333;
+    --primary-color:#EE4D2D;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+
+    --header-height: 56px;
+    --suggest-height: 34px;
+    --side-bar-width: 230px;
+    --side-bar-small-width: 100px;
+
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+html{
+    /* HACK */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
