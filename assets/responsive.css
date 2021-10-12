@@ -40,8 +40,10 @@
 }
 
 .mobile-notify__items-search {
-    font-size: 20px;
+    font-size: 1.8rem;
     margin-right: 24px;
+    color: var(--text-black-color);
+
 }
 
 .mobile-notify__items-icon {
