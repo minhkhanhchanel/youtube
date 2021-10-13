@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/app.js">
     <title>Youtube</title>
 </head>
 <body>
@@ -96,7 +97,80 @@
                     </svg>
 
 
-                    <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class="mobile-notify__items-user">
+                    <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class="mobile-notify__items-user js-mobile-notify__items-user">
+                </div>
+
+                <div class="mobile-user-modal l-0 m-0 js-mobile-user-modal">
+                        <i class="mobile-user-modal-close js-mobile-user-modal-close fas fa-times"></i>
+                    <div class="user-modal-container">
+                        <ul class="user-title">
+                            <li class="user-title-items">
+                                <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class=" user-icon-avt mobile-notify__items-user">
+                                <a class="user-content" href="#">Minh Hiếu</a>
+                                <a class="user-icon-right">
+                                    <span><i class="fas fa-chevron-right"></i></span>
+                                </a>
+                                
+                            </li>
+
+                            <li class="user-account">
+                                <a class="user-icon-account" href="#">Quản lý tài khoản của bạn</a>
+                                
+                            </li>
+
+                            <li class="user-title-items">
+                                    <i class="user-icon fas fa-user-secret"></i>
+                                <a class="user-content" href="#">Bật chế độ ẩn danh</a>
+                            </li>
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas fa-user-plus"></i>
+                                <a class="user-content" href="#">Thêm Tài Khoản</a>
+                            </li>
+                        </ul>
+
+                        <ul class="user-title">
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas fa-user"></i>
+                            <a class="user-content" href="#">Kênh của bạn</a>
+                        </li>
+
+                            <li class="user-title-items">
+                                    <i class="user-icon fas fa-play-circle"></i>
+                                <a class="user-content" href="#">Youtube Studio</a>
+                            </li>
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas far fa-chart-bar"></i>
+                                <a class="user-content" href="#">Thời lượng đã xem</a>
+                            </li>
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas fas fa-dollar-sign"></i>
+                                <a class="user-content" href="#">Giao dịch mua và gói thành viên</a>
+                            </li>
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas fa-database"></i>
+                                <a class="user-content" href="#">Dữ liệu của bạn trong Youtube</a>
+                            </li>
+                        </ul>
+
+                        <ul class="user-title">
+
+                            <li class="user-title-items">
+                                    <i class="user-icon fas fa-cog"></i>
+                                <a class="user-content" href="#">Cài đặt</a>
+                            </li>
+
+                            <li class="user-title-items">
+                                <i class="user-icon fas fa-question-circle"></i>
+                            <a class="user-content" href="#">Trợ giúp và phản hồi</a>
+                        </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1867,7 +1941,7 @@
     </script>
 
     <script>
-        // mobibile
+        // show sidebar
 
         const sideBarModal = document.querySelector('.sidebar-modal')
 
@@ -1883,6 +1957,20 @@
         sideBarModal.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
+        // show user info
+        const userMobile = document.querySelector('.js-mobile-notify__items-user')
+        const userModalMobile = document.querySelector('.js-mobile-user-modal')
+        const userModalMobileClose = document.querySelector('.js-mobile-user-modal-close')
+
+        function showInfoUser() {
+            userModalMobile.classList.add('open')
+        }
+        function hideInfoUser() {
+            userModalMobile.classList.remove('open')
+        }
+        userMobile.addEventListener('click', showInfoUser)
+        userModalMobileClose.addEventListener('click',hideInfoUser)
         
 
 
