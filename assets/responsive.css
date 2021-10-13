@@ -94,7 +94,7 @@
 }
 
 .sidebar {
+    animation: inSideBar ease-in-out .2s;
     display: block;
-
 }
 }

@@ -195,7 +195,7 @@
     margin-right: 16px;
     height: calc(100vh - var(--header-height));
     padding-right: 4px;
-    animation: inSideBar ease-in-out 0.05s;
+    animation: inSideBar ease-in 0.1s;
     overflow-y: auto;
     display: none;
 } 
