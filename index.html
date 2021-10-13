@@ -88,8 +88,8 @@
                         <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class="header-notify__items-user">
                     </div>
                 </div>
-
-                <div class="mobile-notify l-0 m-0">
+                <!-- l-0 m-0 -->
+                <div class="mobile-notify l-0 c-0">
                     <i class="mobile-notify__items-search fas fa-search"></i>
 
                     <svg class="mobile-notify__items-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="header__notify-icon" style="pointer-events: none; display: block;">
@@ -102,7 +102,7 @@
 
                 <div class="mobile-user-modal l-0 m-0 js-mobile-user-modal">
                         <i class="mobile-user-modal-close js-mobile-user-modal-close fas fa-times"></i>
-                    <div class="user-modal-container">
+                    <div class="user-modal-container js-user-modal-container">
                         <ul class="user-title">
                             <li class="user-title-items">
                                 <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class=" user-icon-avt mobile-notify__items-user">
@@ -1954,7 +1954,7 @@
         }
         menu.addEventListener('click', showSideBar)
         sideBarModal.addEventListener('click', hideSidebar)
-        sideBarModal.addEventListener('click', function(event) {
+        sideBar.addEventListener('click', function(event) {
             event.stopPropagation()
         })
 
@@ -1962,6 +1962,7 @@
         const userMobile = document.querySelector('.js-mobile-notify__items-user')
         const userModalMobile = document.querySelector('.js-mobile-user-modal')
         const userModalMobileClose = document.querySelector('.js-mobile-user-modal-close')
+        const userModalTablet = document.querySelector('.js-user-modal-container')
 
         function showInfoUser() {
             userModalMobile.classList.add('open')
@@ -1971,8 +1972,13 @@
         }
         userMobile.addEventListener('click', showInfoUser)
         userModalMobileClose.addEventListener('click',hideInfoUser)
-        
 
+        userModalMobile.addEventListener('click',hideInfoUser)
+        userModalTablet.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+        
 
 
     </script>

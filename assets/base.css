@@ -27,3 +27,49 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+@keyframes InOut {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes inSideBar {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes inUserInfo {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes showInfo {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    
+}

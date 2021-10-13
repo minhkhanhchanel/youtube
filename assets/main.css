@@ -200,7 +200,7 @@
     display: none;
 } 
 
-@keyframes inSideBar {
+/* @keyframes inSideBar {
     from {
         transform: translateX(-100%);
         opacity: 0;
@@ -210,7 +210,7 @@
         opacity: 1;
 
     }
-}
+} */
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -477,14 +477,14 @@
     display: none;
 }
 
-@keyframes InOut {
+/* @keyframes InOut {
     from {
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
 
 .content__item:hover .content__item-time-start-icon {
     display: block;
@@ -564,3 +564,107 @@
     color: #606060;
     padding: 0 8px;
 }
+
+/* Mobile user */
+.mobile-user-modal {
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color:var(--white-color);
+    animation: showInfo linear .3s;
+    z-index: 20;
+    display: none;
+}
+
+/* @keyframes showInfo {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+    
+} */
+.mobile-user-modal-close {
+    position: absolute;
+    display: inline-block;
+    top: 4px;left: 6px;
+    font-size: 24px;
+    padding: 5px 8px;
+    opacity: .7;
+}
+
+
+.user-modal-container {
+    /* padding: 24px; */
+    padding-top: 36px;
+}
+
+.user-title {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding: 6px 0 6px 0;
+}
+
+.user-title:last-child {
+    border-bottom: none;
+}
+
+.user-title-items {
+    display: flex;
+    align-items: center;
+    padding: 2px 24px;
+
+}
+
+.user-title-items:hover {
+    background-color:var(--hover-color);
+}
+
+.user-icon-avt {
+
+}
+
+.user-content {
+    color:var(--black-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-left: 8px;
+    
+}
+
+.user-icon-right {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    justify-content: flex-end;
+
+}
+
+.user-account {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 24px;
+}
+
+.user-icon-account {
+    font-size: 1.4rem;
+    color: rgb(48, 139, 192);
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 0 0 8px 0;
+}
+
+.user-icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    padding: 11px 0;
+}
+
+
