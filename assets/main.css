@@ -42,6 +42,7 @@
     color: var(--black-color);
 }
 
+
 .header__navbar-logo {
     width: 94px;
     height: 20px;
@@ -190,15 +191,25 @@
 /* sidebar home */
 .sidebar {
     width: var(--side-bar-width);
+    background-color: var(--white-color);
     margin-right: 16px;
     height: calc(100vh - var(--header-height));
     padding-right: 4px;
+    animation: inSideBar ease-in-out 0.05s;
     overflow-y: auto;
-
+    display: none;
 } 
 
-.sidebar-2 {
-    width: var(--side-bar-small-width);
+@keyframes inSideBar {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
 }
 
 ::-webkit-scrollbar {

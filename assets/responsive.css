@@ -77,4 +77,24 @@
     font-size: 4rem;
     margin-left: 6px;
 }
+
+.sidebar-modal {
+    position: fixed;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.sidebar {
+    display: block;
+
+}
 }
