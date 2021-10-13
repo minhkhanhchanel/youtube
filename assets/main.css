@@ -37,7 +37,6 @@
 
 .header__navbar-icon {
     font-size: 1.8rem;
-    margin-right: 28px;
     margin-top: 2px;
     color: var(--black-color);
 }
@@ -46,6 +45,7 @@
 .header__navbar-logo {
     width: 94px;
     height: 20px;
+    margin-left: 28px;
 }
 
 .search {
