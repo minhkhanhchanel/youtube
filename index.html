@@ -69,9 +69,6 @@
                 
                 <div class="header-notify">
                     <div class="header-notify__items">
-                        <!-- <i class="header-notify__items-icon fas fa-video"></i>
-                        <i class="header-notify__items-icon fas fa-th-list"></i>
-                        <i class="header-notify__items-icon fas fa-bell"></i> -->
 
                         <svg class="header-notify__items-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="header__create-video-icon" style="pointer-events: none; display: block;">
                             <g class="style-scope yt-icon"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path></g>
@@ -81,11 +78,13 @@
                             <g class="style-scope yt-icon"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path></g>
                         </svg>
 
-                        <svg class="header-notify__items-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="header__notify-icon" style="pointer-events: none; display: block;">
-                            <g class="style-scope yt-icon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path></g>
-                        </svg>
+                        <div class="header-notify__items-icon-bell js-header-notify__items-icon-bell">
+                            <svg class="header-notify__items-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="header__notify-icon" style="pointer-events: none; display: block;">
+                                <g class="style-scope yt-icon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path></g>
+                            </svg>
+                        </div>
 
-
+                        
                         <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class="header-notify__items-user js-pc-header-notify__items-user">
                     </div>
                 </div>
@@ -222,6 +221,121 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- begin notify show -->
+                <div class="header__notify js-header__notify">
+                    <ul class="header__notify-item js-header__notify-item">
+                        <li class="header__notify-list-noti">
+                            <a href="" class="header__notify-noti">Thông Báo Mới</a>
+                        </li>
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">49 phút trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">1 giờ trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">49 phút trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">1 giờ trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">49 phút trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">1 giờ trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">49 phút trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">1 giờ trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">49 phút trước</a>
+                            </div>
+                            
+                        </li>
+
+                        <li class="header__notify-list">
+                            <img class="header__notify-avt" src="./assets/img/nguyenminhhieummocut.png" alt="">
+                            <div class="header__notify-content">
+                                <a href="" class="header__notify-heading">Minh Hiếu Chanel vừa tải lên video mới: </a>
+                                <a href="" class="header__notify-decs">Biệt đội siêu anh hùng giải cứu thế giới Vừa tải lên video mới </a>
+                                <a href="" class="header__notify-time">1 giờ trước</a>
+                            </div>
+                            
+                        </li>
+
+                        
+                        
+                    </ul>
+                </div>
+                
+                <!-- end notifi show -->
+
+                
             </div>
         </div>
         <!-- hideOnTabletMobile -->
@@ -2051,6 +2165,29 @@
 
         iconUserPc.addEventListener('click', showInfoPc)
         modalInfoClosePC.addEventListener('click', hideInfoPc)
+
+        // show thong bao bell PC
+
+        const bell = document.querySelector('.js-header-notify__items-icon-bell')
+        const modalPcnoti = document.querySelector('.js-header__notify') // modal tắt
+        const notiTable = document.querySelector('.js-header__notify-item')// bảng thông báo tắt nhung viec sũi bọt
+        
+        function showNotiPc() {
+            modalPcnoti.classList.add('open')
+        }
+
+        function hideNotiPc() {
+            modalPcnoti.classList.remove('open')
+        }
+        
+        bell.addEventListener('click', showNotiPc)
+        modalPcnoti.addEventListener('click', hideNotiPc)
+        notiTable.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+
+        
 
     </script>
     

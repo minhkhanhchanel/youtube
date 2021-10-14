@@ -575,12 +575,7 @@
 
 
 .mobile-user-modal {
-    /* position: fixed;
-    top: 0;right: 0;bottom: 0;left: 0;
-    background-color:var(--white-color);
-    animation: showInfo linear .3s;
-    z-index: 20;
-    display: none; */
+    
     position: fixed;
     background-color:var(--white-color);
     animation: showInfo linear .3s;
@@ -668,5 +663,120 @@
     margin-right: 15px;
     padding: 11px 0;
 }
+
+
+/* show info notify */
+.header__notify {
+    position: fixed;
+    left: 0;right: 0;top: 0;bottom: 0;
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+    display: none;
+}
+
+.header__notify::before {
+    content: "";
+    right: 79px;
+    top: 28px;
+    position: absolute;
+    border: 12px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    z-index: 10;
+}
+
+.header__notify-item {
+    position: absolute;
+    max-width: 400px;
+    max-height: 560px;
+    background-color: #fff;
+    right: 72px;
+    top: calc(var(--header-height) - 4px);
+    margin: 0;
+    padding: 0 8px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.header__notify-item::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+.header__notify-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 6px 24px;
+
+}
+
+.header__notify-list:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.header__notify-list:last-child {
+    margin-bottom: 8px;
+}
+
+.header__notify-noti {
+    font-size: 1.4rem;
+    color: var(--black-color);
+    text-decoration: none;
+    display: block;
+    padding: 12px 24px;
+    cursor: default;
+}
+
+.header__notify-avt {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 8px;
+
+
+}
+.header__notify-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__notify-heading {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+}
+.header__notify-decs {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    color: var(--text-black-color);
+    text-decoration: none;   
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.header__notify-time {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-black-color);
+    display: block;
+    padding: 4px 0 0 0;
+    align-self: flex-end;
+
+}
+
+
+
 
 

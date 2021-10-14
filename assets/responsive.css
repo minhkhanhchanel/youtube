@@ -221,7 +221,7 @@
     }
     
 }
-/*  Mobile */
+/* Â Mobile */
 
 @media (max-width: 739px) {
     .mobile-notify {
@@ -235,7 +235,7 @@
         display: flex;
         align-items: center;
         position: fixed;
-        top: var(--header-height);
+        top: var(--header-height);  
         left: 0;
         right: 0;
         animation: showInfoTop linear .3s;
@@ -269,9 +269,6 @@
     }
 
     #icon-search:checked ~.search {
-        display: block;
-    }
-    .block {
         display: block;
     }
    
