@@ -221,7 +221,7 @@
     }
     
 }
-/* Â Mobile */
+/*  Mobile */
 
 @media (max-width: 739px) {
     .mobile-notify {
@@ -231,7 +231,7 @@
 
     .search {
         flex: 1;
-        height: 45px;
+        height: 50px;
         display: flex;
         align-items: center;
         position: fixed;
