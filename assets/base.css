@@ -84,3 +84,14 @@ html{
     }
     
 }
+@keyframes rightToLeft {
+    from {
+        transform: translatex(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(0);
+        opacity: 1;
+
+    }
+}

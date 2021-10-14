@@ -80,10 +80,7 @@
     .header__navbar {
 
     }
-   .search {
-       display: none;
-   }
-
+   
    .header-notify__items {
        display: none;
    }
@@ -176,6 +173,52 @@
         position:absolute;
         right: 20px;
     }
+
+    .header__navbar {
+        /* position: relative; */
+    }
+    .search {
+        position: fixed;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        top: 9px;
+        left: 25%;
+        right: 22%;
+        animation: showInfoTop linear .3s;
+        display: none;
+    }
+
+    .search__micro-icon {
+        display: none;
+    }
+    .search__btn-key {
+        display: none;
+    }
+    .search__btn-icon {
+        display: none;
+    }
+
+    .search__history {
+        position: absolute;
+        top: 0;
+        background: var(--white-color);
+        box-shadow: 0 0 5px #ccc;
+        display: none;
+    }
+    
+    .search__history-list {
+        list-style: none;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    #icon-search:checked ~.search {
+        display: block;
+    }
+    .block {
+        /* display: block; */
+    }
     
 }
 /*  Mobile */
@@ -185,6 +228,53 @@
         position:absolute;
         right: 10px;
     }
+
+    .search {
+        flex: 1;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        animation: showInfoTop linear .3s;
+        display: none;
+    }
+
+    .search__micro-icon {
+        display: none;
+    }
+    .search__btn-key {
+        display: none;
+    }
+    .search__btn-icon {
+        display: none;
+    }
+
+    .search__history {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white-color);
+        box-shadow: 0 0 5px #ccc;
+        display: none;
+    }
+    
+    .search__history-list {
+        list-style: none;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    #icon-search:checked ~.search {
+        display: block;
+    }
+    .block {
+        display: block;
+    }
+   
 }
 
 .open {

@@ -22,13 +22,12 @@
                     <img src="./assets/img/logo__youtube.png" alt="Youtube" class="header__navbar-logo">
                     <p class="header__navbar-vn">VN</p>
                 </div>
-                
-                <div class="search">
+                <!-- ẩn trên mobile taplet  o input-->
+                <div class="search hideOnTabletMobile">
                         <input type="text" name="" placeholder="Tìm Kiếm" id="" class="search__input-text">
                         <i class="search__btn-key fas fa-keyboard"></i>
                         <i class="search__btn-icon fas fa-search"></i>
                         <i class="search__micro-icon fas fa-microphone"></i>
-                        
                         <div class="search__history">
                             <ul class="search__history-list">
                                 <li class="search__history-item">
@@ -65,6 +64,8 @@
                         </div>
                 </div>
 
+                <!-- end an tren mobile tablet  -->
+
                 
                 <div class="header-notify">
                     <div class="header-notify__items">
@@ -90,7 +91,53 @@
                 </div>
                 <!-- l-0 m-0 -->
                 <div class="mobile-notify l-0 c-0">
-                    <i class="mobile-notify__items-search fas fa-search"></i>
+                    <label for="icon-search"><i class="mobile-notify__items-search fas fa-search"></i></label>
+                    <input type="checkbox" hidden  id="icon-search" class="icon-search-check">
+
+                    <!-- input mobile -->
+
+                    <div class="search ">
+                        <input type="text" name="" placeholder="Tìm Kiếm" id="" class="search__input-text">
+                        <i class="search__btn-key fas fa-keyboard"></i>
+                        <i class="search__btn-icon fas fa-search"></i>
+                        <i class="search__micro-icon fas fa-microphone"></i>
+                        <div class="search__history">
+                            <ul class="search__history-list">
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Khuê mộng lan</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Khoa Pug</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Running Man Mùa 1</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Window 11</a>
+                                </li>
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Cười Xuyên Việt</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Trấn Thành</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Đôi Mắt</a>
+                                </li>
+        
+                                <li class="search__history-item">
+                                    <a class="search__history-title" href="#">Rap Việt</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                    <!-- end input mobile -->
+                    
 
                     <svg class="mobile-notify__items-icon" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="header__notify-icon" style="pointer-events: none; display: block;">
                         <g class="style-scope yt-icon"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" class="style-scope yt-icon"></path></g>
@@ -99,6 +146,7 @@
 
                     <img src="./assets/img/nguyenminhhieummocut.png" alt="user" class="mobile-notify__items-user js-mobile-notify__items-user">
                 </div>
+                
                 <div class="modal-pc">
 
                 </div>
