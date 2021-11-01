@@ -2043,7 +2043,7 @@
                                 <div class="content__item-desc">
                                     <img src="./assets/img/phatho.jpg" alt="" class="content__item-avt">
                                     <div class="content__item-list">
-                                        <h4 class="content__item-heading">Tìm Được Nhau Khó Thế Nào - Mr Siro MV OFFICIAL</h4>
+                                        <h4 class="content__item-heading">Tìm Được Nhau Khó Thế Nào! - Mr Siro MV OFFICIAL</h4>
                                         
                                         <a class="content__item-views">POPS MUSIC</a>
                                         <div class="content-info">
@@ -2098,14 +2098,14 @@
         const subSideBar = document.querySelector('.js-sub-sidebar')
         const logo = document.querySelector('.header__navbar-logo')
         function showSideBar () {
-            sideBar.classList.add('open')
+            sideBar.classList.toggle('open')
         }
 
-        function hideSidebar() {
-            sideBar.classList.remove('open')
-        }
+        // function hideSidebar() {
+        //     sideBar.classList.remove('open')
+        // }
         menu.addEventListener('click', showSideBar)
-        logo.addEventListener('click', hideSidebar)
+        // logo.addEventListener('click', hideSidebar)
     </script>
 
     <script>
